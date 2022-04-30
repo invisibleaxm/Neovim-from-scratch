@@ -3,8 +3,44 @@ if not status_ok then
   return
 end
 
+local parsers = {
+   "bash",
+   "c",
+   "cmake",
+   "comment",
+   "cpp",
+   "css",
+   "dockerfile",
+   "dot",
+   "go",
+   "gomod",
+   "graphql",
+   "help",
+   "hjson",
+   "html",
+   "http",
+   "java",
+   "javascript",
+   "jsdoc",
+   "json",
+   "json5",
+   "lua",
+   "make",
+   "nix",
+   "perl",
+   "php",
+   "python",
+   "regex",
+   "rst",
+   "rust",
+   "typescript",
+   "vim",
+   "vue",
+   "yaml",
+ }
+
 configs.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ensure_installed = parsers,
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "" }, -- List of parsers to ignore installing
   autopairs = {
