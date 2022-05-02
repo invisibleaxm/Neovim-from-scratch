@@ -21,8 +21,8 @@ vim.g.nvim_tree_icons = {
   },
 }
 -- TEMPORARY HACK
-vim.g["nvim_tree_git_hl"] = 1 --0 by default, will enable file highlight for git attributes (can be used without the icons).
-vim.g["nvim_tree_highlight_opened_files"] = 1 --0 by default, will enable folder and file icon highlight for opened files/directories.
+vim.g["nvim_tree_git_hl"] = 0 --0 by default, will enable file highlight for git attributes (can be used without the icons).
+vim.g["nvim_tree_highlight_opened_files"] = 0 --0 by default, will enable folder and file icon highlight for opened files/directories.
 vim.g["nvim_tree_root_folder_modifier"] = ':~' --This is the default. See :help filename-modifiers for more options
 vim.g["nvim_tree_add_trailing"] = 1 --0 by default, append a trailing slash to folder names
 vim.g["nvim_tree_group_empty"] = 1 -- 0 by default, compact folders that only contain a single folder into one node in the file tree
@@ -33,9 +33,9 @@ vim.g["nvim_tree_create_in_closed_folder"] = 1 --0 by default, When creating fil
 vim.g["nvim_tree_special_files"] = { ["README.md"] = 1, Makefile = 1, MAKEFILE = 1 } -- List of filenames that gets highlighted with NvimTreeSpecialFile
 vim.g["nvim_tree_show_icons"] = {
       git = 1,
-      folders = 0,
-      files = 0,
-      folder_arrows = 0,
+      folders = 1,
+      files = 1,
+      folder_arrows = 1,
     }
 --If 0, do not show the icons for one of 'git' 'folder' and 'files'
 --1 by default, notice that if 'files' is 1, it will only display
@@ -49,7 +49,7 @@ vim.g["nvim_tree_icons"] = {
           default = "",
           symlink = "",
           git = {
-          unstaged = "✗",
+    	  unstaged = "",
           staged = "✓",
           unmerged = "",
           renamed = "➜",
@@ -84,7 +84,7 @@ vim.cmd "nnoremap <leader>n :NvimTreeFindFile<CR>"
 vim.cmd [[set termguicolors]] -- this variable must be enabled for colors to be applied properly
 
 -- a list of groups can be found at `:help nvim_tree_highlight`
-vim.cmd [[highlight NvimTreeFolderIcon guibg=blue]]
+--vim.cmd [[highlight NvimTreeFolderIcon guibg=blue]]
 
 -- END TEMPORARY HACK
 
@@ -141,7 +141,7 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 30,
+    width = 40,
     height = 30,
     hide_root_folder = false,
     side = "left",
