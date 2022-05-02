@@ -60,6 +60,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "sheerun/vim-polyglot"
   use "jjo/vim-cue"
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
