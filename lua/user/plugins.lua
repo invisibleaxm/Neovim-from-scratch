@@ -58,9 +58,15 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "sheerun/vim-polyglot"
   use "jjo/vim-cue"
   use {'neoclide/coc.nvim', branch = 'release'}
+  use "pprovost/vim-ps1"
+--  use { 
+--    'neoclide/coc.nvim',
+--    branch = 'master',
+--    run = 'yarn install --frozen-lockfile',
+--    ft = 'ps1'
+--  }
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
