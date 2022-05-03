@@ -60,16 +60,9 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "jjo/vim-cue"
   use {'neoclide/coc.nvim', branch = 'release'}
-  use "pprovost/vim-ps1"
---  use { 
---    'neoclide/coc.nvim',
---    branch = 'master',
---    run = 'yarn install --frozen-lockfile',
---    ft = 'ps1'
---  }
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
 
   -- cmp plugins
