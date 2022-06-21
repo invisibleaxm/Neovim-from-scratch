@@ -12,11 +12,7 @@ local parsers = {
    "css",
    "dockerfile",
    "dot",
-   "gomod",
    "graphql",
-   "hcl",
-   "help",
-   "hjson",
    "html",
    "http",
    "javascript",
@@ -24,7 +20,6 @@ local parsers = {
    "json",
    "json5",
    "lua",
-   "make",
    "nix",
    "python",
    "regex",
@@ -32,8 +27,7 @@ local parsers = {
    "rust",
    "typescript",
    "vim",
-   "vue",
-   "yaml",
+   "yaml"
  }
 
 configs.setup {
@@ -53,4 +47,5 @@ configs.setup {
     enable = true,
     enable_autocmd = false,
   },
+
 }

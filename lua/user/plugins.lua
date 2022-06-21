@@ -92,6 +92,8 @@ return packer.startup(function(use)
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
     }
+  else
+    use "asvetliakov/vim-easymotion"
   end
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
