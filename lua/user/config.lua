@@ -9,6 +9,7 @@ parser_config.powershell = {
 }
 
 
+
 -- Lua:
 -- For dark theme
 --vim.g.vscode_style = "dark"
