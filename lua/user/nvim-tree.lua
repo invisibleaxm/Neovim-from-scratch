@@ -24,7 +24,7 @@ vim.cmd "nnoremap <leader>n :NvimTreeFindFile<CR>"
 vim.cmd [[set termguicolors]] -- this variable must be enabled for colors to be applied properly
 
 -- a list of groups can be found at `:help nvim_tree_highlight`
---vim.cmd [[highlight NvimTreeFolderIcon guibg=blue]]
+--vim.cmd [[highlight NvimTreeFolderIcon bg=blue]]
 
 -- END TEMPORARY HACK
 
@@ -44,7 +44,6 @@ local tree_cb = nvim_tree_config.nvim_tree_callback
 nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_setup = false,
   ignore_ft_on_setup = {
     "startify",
     "dashboard",
@@ -82,7 +81,6 @@ nvim_tree.setup {
   },
   view = {
     width = 40,
-    height = 30,
     hide_root_folder = false,
     side = "left",
     mappings = {

@@ -79,7 +79,7 @@ if vim.g.vscode ~= nil then
   keymap("x","<C-h>", ":call VSCodeNotify('workbench.action.navigateLeft')<CR>", opts)
   keymap("n","<C-l>", ":call VSCodeNotify('workbench.action.navigateRight')<CR>", opts)
   keymap("x","<C-l>", ":call VSCodeNotify('workbench.action.navigateRight')<CR>", opts)
-  keymap("n","<Space>", ":call VSCodeNotify('whichkey.show')<CR>", opts)
+  --keymap("n","<Space>", ":call VSCodeNotify('whichkey.show')<CR>", opts)
   keymap("x","<Space>", ":call VSCodeNotify('whichkey.show')<CR>", opts)
   keymap("n","<C-/>", ":call Comment()<CR>", opts)
   keymap("x","<C-/>", ":call Comment()<CR>", opts)
@@ -91,14 +91,14 @@ end
 
 -- nnoremap <silent> <C-w>v :call <SID>split('v')<CR>
 -- xnoremap <silent> <C-w>v :call <SID>split('v')<CR>
--- 
+--
 -- nnoremap <silent> <C-w>n :call <SID>splitNew('h', '__vscode_new__')<CR>
 -- xnoremap <silent> <C-w>n :call <SID>splitNew('h', '__vscode_new__')<CR>
--- 
--- 
+--
+--
 -- nnoremap <silent> <C-w>= :<C-u>call VSCodeNotify('workbench.action.evenEditorWidths')<CR>
 -- xnoremap <silent> <C-w>= :<C-u>call VSCodeNotify('workbench.action.evenEditorWidths')<CR>
--- 
+--
 -- nnoremap <silent> <C-w>> :<C-u>call <SID>manageEditorSize(v:count, 'increase')<CR>
 -- xnoremap <silent> <C-w>> :<C-u>call <SID>manageEditorSize(v:count, 'increase')<CR>
 -- nnoremap <silent> <C-w>+ :<C-u>call <SID>manageEditorSize(v:count, 'increase')<CR>
