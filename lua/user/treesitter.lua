@@ -3,29 +3,25 @@ if not status_ok then
   return
 end
 
+if vim.loop.os_uname().sysname == "Windows_NT" then
+   require('nvim-treesitter.install').compilers = { "clang" }
+end
+
 local parsers = {
    "bash",
-   "c",
-   "cmake",
    "comment",
-   "cpp",
    "css",
    "dockerfile",
-   "dot",
-   "graphql",
    "html",
    "http",
    "javascript",
    "jsdoc",
    "json",
-   "json5",
    "lua",
    "nix",
    "python",
    "regex",
-   "rst",
    "rust",
-   "typescript",
    "vim",
    "yaml"
  }

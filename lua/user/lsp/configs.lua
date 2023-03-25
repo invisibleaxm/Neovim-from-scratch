@@ -7,11 +7,12 @@ local lspconfig = require("lspconfig")
 
 --local servers = { "jsonls", "sumneko_lua", "omnisharp", "powershell_es", "bicep" }
 -- local servers = { "jsonls", "sumneko_lua", "omnisharp"}
-local servers = { "jsonls", "sumneko_lua"}
+-- local servers = { "lua_ls"}
+local servers = { "jsonls", "lua_ls","rust_analyzer", "powershell_es"  }
 
-lsp_installer.setup {
-	ensure_installed = servers
-}
+--lsp_installer.setup {
+--	ensure_installed = servers
+--}
 
 for _, server in pairs(servers) do
 	local opts = {
