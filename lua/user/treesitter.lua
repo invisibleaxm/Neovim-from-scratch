@@ -11,6 +11,7 @@ local parsers = {
    "bash",
    "comment",
    "css",
+   "cue",
    "dockerfile",
    "html",
    "http",
