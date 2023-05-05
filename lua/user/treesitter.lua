@@ -3,9 +3,9 @@ if not status_ok then
   return
 end
 
-if vim.loop.os_uname().sysname == "Windows_NT" then
-   require('nvim-treesitter.install').compilers = { "clang" }
-end
+--if vim.loop.os_uname().sysname == "Windows_NT" then
+--   require('nvim-treesitter.install').compilers = { "clang" }
+--end
 
 local parsers = {
    "bash",
